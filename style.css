@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center center;
+  }
+
+
+  #loading {
+    font-size: 30px;
+  }
+
+  .chat-box {
+    margin: 80px auto;
+    width: 400px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 700px;
+  }
+
+
+  .chat-box-header {
+    background-color: #036e2c;
+    color: #ffffff;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .chat-box-body {
+    padding: 16px;
+    overflow-y: auto;
+    height: calc(100% - 145px);
+  }
+
+  .chat-box-body .message,
+  .chat-box-body .response {
+    margin-bottom: 16px;
+  }
+
+
+  .message {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+  }
+
+  .message span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #8fd5a8;
+    padding: 20px;
+    border-radius: 16px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+  }
+
+ .response {
+    color: rgb(23, 22, 22);
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+  }
+
+.response {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #d5dde0;
+    padding: 10px;
+    border-radius: 14px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+  }
+  .chat-box-footer {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color:  #d5dde0;
+    border-top: 1px solid  #d5dde0;
+    padding: 8px 16px;
+  }
+
+  .chat-box-footer input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #d5dde0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .chat-box-footer button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    background-color: #036e2c;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .chat-box-footer button:hover {
+    background-color: #06b047;
+  }
+
+  .chat-box-footer button:active {
+    background-color: #37bf6b
+  }
+  
+.button-submit{
+  background-color: #036e2c;
+}
+
